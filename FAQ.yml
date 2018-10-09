@@ -1,0 +1,25 @@
+messages:
+  value: Selecione uma das perguntas mais frequentes
+  extra:
+    reply_markup:
+      keyboard:
+        - *listA
+        - *listB
+listA: &listA:
+  - *one
+  - *two
+listB:
+  - *three
+  - *four
+one: &one
+  keyboard_button:
+    text: o que é o index?
+two: &two
+  keyboard_button:
+    text: como registrar?
+three: &three
+  keyboard_button:
+    text: como realizar o login?
+four: &four
+  keyboard_button:
+    text: como verificar minha conta?

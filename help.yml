@@ -1,0 +1,16 @@
+messages:
+  - value: Clique no tópico de ajuda desejado
+    extra:
+      reply_markup:
+        keyboard:
+          - *listA
+
+listA: &listA
+  - *one 
+  - *two
+one: &one
+  keyboard_button:
+    text: '/servicos'
+tow: &two
+  keyboard_button:
+    text: '/faq'

@@ -1,0 +1,26 @@
+messages:
+  - value: Olá ${first_name}, o que você quer fazer?
+    extra:
+      reply_markup:
+        reply_keyboard:
+          keyboard:
+            - *listA
+            - *listB
+listA: &listA
+  - *one
+  - *two
+listB: &listB
+  - *three
+  - *four
+one: &one
+  keyboard_button:
+    text: '/start'
+two: &two
+  keyboard_button:
+    text: '/help'
+three: &three
+  keyboard_button:
+    text: '/comandos'
+four: &four
+  keyboard_button:
+    text: '/servicos'
